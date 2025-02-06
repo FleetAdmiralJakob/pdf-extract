@@ -4,5 +4,5 @@
 4. Run the script with `pnpm start`.
 
 Expected output:
-<img width="1392" alt="image" src="https://github.com/user-attachments/assets/f5282fe9-b8b4-442b-bebe-721029ee7204">
-<img width="1392" alt="image" src="https://github.com/user-attachments/assets/04bdb18c-51d4-4375-8620-ace64e93480f">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/f5282fe9-b8b4-442b-bebe-721029ee7204">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/04bdb18c-51d4-4375-8620-ace64e93480f">
