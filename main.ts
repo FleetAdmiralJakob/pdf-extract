@@ -6,7 +6,6 @@ import { z } from "zod";
 import { zodResponseFormat } from "openai/helpers/zod";
 import { type ChatCompletionContentPartImage } from "openai/resources/chat/completions";
 import { PDFToImage } from "pdf-to-image-generator";
-import fs from "fs/promises";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -29,11 +28,6 @@ const Profile = z.object({
 
 async function convertPdfToJpegs(): Promise<string[]> {
   const outputDir = path.join(__dirname);
-  try {
-    await fs.mkdir(outputDir, { recursive: true });
-  } catch (error) {
-    console.error("Error creating output directory:", error);
-  }
 
   const pdfPath = path.join(__dirname, "profile.pdf");
 
