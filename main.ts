@@ -11,7 +11,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.GEMINI_API_KEY,
+  baseURL: "https://generativelanguage.googleapis.com/v1beta/openai",
 });
 
 const Profile = z.object({
@@ -65,7 +66,7 @@ async function main() {
   const base64Images = await convertPdfToJpegs();
 
   const response = await client.chat.completions.create({
-    model: "gpt-4o-mini",
+    model: "gemini-1.5-flash",
     messages: [
       {
         role: "system",
