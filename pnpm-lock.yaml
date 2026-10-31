@@ -13,13 +13,13 @@ importers:
         version: 22.13.1
       openai:
         specifier: ^4.82.0
-        version: 4.82.0(zod@3.24.1)
+        version: 4.82.0(zod@4.6.7)
       pdf-to-image-generator:
         specifier: ^1.0.4
         version: 1.0.4
       zod:
-        specifier: ^3.24.1
-        version: 3.24.1
+        specifier: ^4.6.6
+        version: 4.6.7
 
 packages:
 
@@ -196,8 +196,8 @@ packages:
   whatwg-url@5.0.0:
     resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
 
-  zod@3.24.1:
-    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
 snapshots:
 
@@ -307,7 +307,7 @@ snapshots:
     dependencies:
       whatwg-url: 5.0.0
 
-  openai@4.82.0(zod@3.24.1):
+  openai@4.82.0(zod@4.6.7):
     dependencies:
       '@types/node': 18.19.75
       '@types/node-fetch': 2.6.12
@@ -317,7 +317,7 @@ snapshots:
       formdata-node: 4.4.1
       node-fetch: 2.7.0
     optionalDependencies:
-      zod: 3.24.1
+      zod: 4.6.7
     transitivePeerDependencies:
       - encoding
 
@@ -344,4 +344,4 @@ snapshots:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
 
-  zod@3.24.1: {}
+  zod@4.6.7: {}
